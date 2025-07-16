@@ -113,28 +113,28 @@ const Gallery = () => {
              {displayItems.map((item, index) => (
             <Card 
               key={item.id}
-              className="cartoon-card border-4 border-fun-pink hover:border-fun-yellow overflow-hidden group hover:scale-110 transition-all duration-300 cursor-pointer bounce-animation"
-              style={{animationDelay: `${index * 0.1}s`}}
+              className="cartoon-card border-4 border-fun-pink hover:border-fun-yellow overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer bounce-animation"
+              style={{animationDelay: `${index * 0.15}s`}}
             >
               <div className="relative overflow-hidden">
                 <img 
                   src={item.image} 
                   alt={item.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-rainbow/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-rainbow/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 {/* Overlay Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                   <h3 className="text-lg font-bold mb-2">{item.title} 🎯</h3>
                   <p className="text-sm opacity-90">{item.description}</p>
                 </div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-4 right-4 w-10 h-10 bg-fun-yellow/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bounce-animation">
+                <div className="absolute top-4 right-4 w-10 h-10 bg-fun-yellow/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 bounce-animation">
                   <span className="text-white text-lg">✨</span>
                 </div>
-                <div className="absolute top-4 left-4 w-8 h-8 bg-fun-pink/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 float-animation">
+                <div className="absolute top-4 left-4 w-8 h-8 bg-fun-pink/80 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 float-animation">
                   <span className="text-white text-sm">🌟</span>
                 </div>
               </div>

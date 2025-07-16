@@ -5,6 +5,8 @@ import { ref, onValue } from 'firebase/database';
 import { database } from '@/lib/firebase';
 import { Calendar, User, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
+import Footer from './Footer';
 
 interface BlogPost {
   id: string;
@@ -55,17 +57,19 @@ const Blog = () => {
   }
 
   return (
-    <section className="py-20 px-6 bg-muted/30">
-      <div className="container mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-display font-bold gradient-text mb-6">
-            Our Blog 📚
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Stay updated with the latest news, tips, and insights from Crystal Play School!
-          </p>
-        </div>
+    <>
+      <Header />
+      <section className="py-20 px-6 bg-muted/30">
+        <div className="container mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-display font-bold gradient-text mb-6">
+              Our Blog 📚
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Stay updated with the latest news, tips, and insights from Crystal Play School!
+            </p>
+          </div>
 
         {/* Blog Posts */}
         {blogPosts.length === 0 ? (
@@ -129,8 +133,10 @@ const Blog = () => {
             </Card>
           </div>
         )}
-      </div>
-    </section>
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 };
 
