@@ -161,7 +161,7 @@ const Activities = () => {
           </div>
 
           <div className="text-center mt-8">
-            <Button className="bg-gradient-primary text-white border-0 px-8 py-6 rounded-2xl text-lg font-semibold hover:scale-105 transition-transform">
+            <Button className="bg-gradient-primary text-white border-0 px-4 sm:px-8 py-4 sm:py-6 rounded-2xl text-sm sm:text-lg font-semibold hover:scale-105 transition-transform">
               📋 View Full Curriculum
             </Button>
           </div>

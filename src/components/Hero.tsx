@@ -38,7 +38,7 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold text-white leading-tight">
               Welcome to{" "}
-              <span className="rainbow-text block font-extrabold mt-2 gentle-wiggle text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+              <span className="rainbow-text block font-extrabold mt-2 gentle-wiggle text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
                 Crystal Play School
               </span>
             </h1>

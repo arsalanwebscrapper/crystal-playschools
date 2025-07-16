@@ -212,17 +212,17 @@ const Contact = () => {
           </Card>
 
           {/* Contact Information */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {contactInfo.map((info, index) => (
-              <Card key={index} className={`cartoon-card border-4 ${info.borderColor} hover:border-fun-lime p-6 hover:scale-110 transition-transform bounce-animation`} style={{animationDelay: `${index * 0.2}s`}}>
-                <div className="flex items-start gap-4">
-                  <div className={`p-3 rounded-xl ${info.bgColor} ${info.color} wiggle-animation`}>
-                    <div className="text-2xl mb-1">{info.emoji}</div>
-                    <info.icon className="w-4 h-4" />
+              <Card key={index} className={`cartoon-card border-4 ${info.borderColor} hover:border-fun-lime p-4 sm:p-6 hover:scale-105 sm:hover:scale-110 transition-transform bounce-animation`} style={{animationDelay: `${index * 0.2}s`}}>
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className={`p-2 sm:p-3 rounded-xl ${info.bgColor} ${info.color} wiggle-animation flex-shrink-0`}>
+                    <div className="text-xl sm:text-2xl mb-1">{info.emoji}</div>
+                    <info.icon className="w-3 h-3 sm:w-4 sm:h-4" />
                   </div>
-                  <div>
-                    <h4 className={`font-bold text-lg mb-2 ${info.color}`}>{info.title} 🎯</h4>
-                    <div className="text-foreground font-medium whitespace-pre-line">
+                  <div className="min-w-0 flex-1">
+                    <h4 className={`font-bold text-base sm:text-lg mb-1 sm:mb-2 ${info.color}`}>{info.title} 🎯</h4>
+                    <div className="text-sm sm:text-base text-foreground font-medium whitespace-pre-line break-words">
                       {info.content}
                     </div>
                   </div>
